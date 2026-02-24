@@ -1,0 +1,89 @@
+﻿@{
+    // The code snippet Context.Request.Query["status"]; is used in ASP.NET Core applications to retrieve the value of the status parameter from the URL query string of the current HTTP request.
+    // This is a common way to access data passed as query parameters in C# web development.
+    var status = Context.Request.Query["status"];
+    var pending = "text-primary";
+    var processing = "text-primary";
+    var ready = "text-primary";
+    var completed = "text-primary";
+    var cancelled = "text-primary";
+    var all = "text-primary";
+
+    switch (status)
+    {
+        case "Pending":
+            pending = "active text-write";
+            break;
+        case "Processing":
+            processing = "active text-write";
+            break;
+        case "Ready":
+            ready = "active text-write";
+            break;
+        case "Completed":
+            completed = "active text-write";
+            break;
+        case "Cancelled":
+            cancelled = "active text-write";
+            break;
+        default:
+            all = "active text-write";
+            break;
+    }
+}
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> Localizer
+
+<div class="p-3">
+    <div class="d-flex justify-content-between pt-4">
+        <div class="pt-2">
+            <h2 class="text-primary">@Localizer["OrderListMsg"]</h2>
+        </div>
+        <div class="p-2">
+            <ul class="list-group list-group-horizontal-sm">
+                <a style="text-decoration:none;" asp-controller="Order"
+                   asp-action="Index" asp-route-status="Pending">
+                <li class="list-group-item @pending">@Localizer["OrderPendingMsg"]</li> @* From previous var function *@
+                </a>
+                <a style="text-decoration:none;" asp-controller="Order"
+                   asp-action="Index" asp-route-status="Processing">
+                <li class="list-group-item @processing">@Localizer["OrderProcessingMsg"]</li>
+                </a>
+                <a style="text-decoration:none;" asp-controller="Order"
+                   asp-action="Index" asp-route-status="Ready">
+                <li class="list-group-item @ready">@Localizer["OrderReadyMsg"]</li>
+                </a>
+                <a style="text-decoration:none;" asp-controller="Order"
+                   asp-action="Index" asp-route-status="Completed">
+                <li class="list-group-item @completed">@Localizer["OrderCompletedMsg"]</li>
+                </a>
+                <a style="text-decoration:none;" asp-controller="Order"
+                   asp-action="Index" asp-route-status="Cancelled">
+                <li class="list-group-item @cancelled">@Localizer["OrderCancelledMsg"]</li>
+                </a>
+                <a style="text-decoration:none;" asp-controller="Order"
+                   asp-action="Index" asp-route-status="all">
+                <li class="list-group-item @all">@Localizer["AllOrdersMsg"]</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <table id="tblData" class="table table-bordered table-striped" style="width:100%">
+        <thead>
+            <tr class="align-middle">
+                <th>@Localizer["OrderNumberSingleMsg"]</th>
+                <th>@Localizer["OrderHeaderNameMsg"]</th>
+                <th>@Localizer["TelMsg"]</th>
+                <th>@Localizer["EmailMsg"]</th>
+                <th>@Localizer["OrderStatusMsg"]</th>
+                <th>@Localizer["OrderTotalMsg"]</th>
+                <th>@Localizer["DetailsMsg"]</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+@section Scripts {
+    <script src="~/js/order.js"></script>
+}
+

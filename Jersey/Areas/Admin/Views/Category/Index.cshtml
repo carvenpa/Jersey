@@ -1,0 +1,57 @@
+﻿@model List<Category>
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> Localizer
+
+@* @if(TempData["success"] != null)
+{
+    <h2>@TempData["success"]</h2>
+} *@
+@* call partial view to display the result of temp  *@
+@* <partial name="_Notification" /> *@
+
+<div class="container">
+    <div class="row pt-4 pb-3">
+        <div class="col-8">
+            <h2 class="text-primary">
+                @Localizer["CatLongMsg"]
+            </h2>
+        </div>
+        <div class="col-4 text-end">
+            <a asp-controller="Category" asp-action="Create" class="btn btn-info">
+                <i class="bi bi-plus-circle"></i>@Localizer["AddNewCatMsg"]
+            </a>
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <table class="table table-bordered table-striped" style="width:100%">
+        <thead class="table-primary">
+            <tr>
+                <th class="fw-bold">@Localizer["LeagueIntMsg"]</th>
+                <th class="fw-bold">@Localizer["DisplayOrderMsg"]</th>
+                <th class="fw-bold">@Localizer["OperationsMsg"]</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var obj in Model.OrderBy(x => x.DisplayOrder))
+            {
+                <tr>
+                    <td>@obj.CatName</td>
+                    <td>@obj.DisplayOrder</td>
+                    <td>
+                        <div class="w-100 btn-group-lg" role="group">
+                            <a asp-controller="Category" asp-action="Edit" asp-route-id="@obj.Id" class="btn btn-primary"> @* need to add the asp-route-id, for this case is CatID for finding *@
+                                <i class="bi bi-pencil-square"></i>@Localizer["EditMsg"]
+                            </a>
+                            <a asp-controller="Category" asp-action="Delete" asp-route-id="@obj.Id" class="btn btn-danger">
+                                <i class="bi bi-trash-fill"></i>@Localizer["DeleteMsg"]
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="2ndAwayMsg" xml:space="preserve">
+    <value>2nd Away</value>
+  </data>
+  <data name="AddMsg" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddNewCatMsg" xml:space="preserve">
+    <value>Add new League or International Team</value>
+  </data>
+  <data name="AddNewStoreMsg" xml:space="preserve">
+    <value>Add new store</value>
+  </data>
+  <data name="AddressMsg" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="AddToShoppingCartMsg" xml:space="preserve">
+    <value>Add to Shopping Cart</value>
+  </data>
+  <data name="AwayMsg" xml:space="preserve">
+    <value>Away</value>
+  </data>
+  <data name="BackToCategoryMsg" xml:space="preserve">
+    <value>Back to Category List</value>
+  </data>
+  <data name="BackToProductMsg" xml:space="preserve">
+    <value>Back to Product Jersey List</value>
+  </data>
+  <data name="BackToStoresListMsg" xml:space="preserve">
+    <value>Back to Stores List </value>
+  </data>
+  <data name="CategoryMsg" xml:space="preserve">
+    <value>Category </value>
+  </data>
+  <data name="CatLongMsg" xml:space="preserve">
+    <value>Category (League Name OR International Team)</value>
+  </data>
+  <data name="CMMsg" xml:space="preserve">
+    <value>Content Management</value>
+  </data>
+  <data name="DeleteMsg" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DescriptionMsg" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="DetailsMsg" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="DisplayOrderMsg" xml:space="preserve">
+    <value>Display Order</value>
+  </data>
+  <data name="DistrictMsg" xml:space="preserve">
+    <value>District</value>
+  </data>
+  <data name="EditionMsg" xml:space="preserve">
+    <value>Edition</value>
+  </data>
+  <data name="EditMsg" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="FansEditionMsg" xml:space="preserve">
+    <value>Fans Edition</value>
+  </data>
+  <data name="HomeMsg" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="LeagueIntMsg" xml:space="preserve">
+    <value>League or International Team Name</value>
+  </data>
+  <data name="LoginSystemMsg" xml:space="preserve">
+    <value>Login System</value>
+  </data>
+  <data name="MFJMsg" xml:space="preserve">
+    <value>Football Jersey Shop</value>
+  </data>
+  <data name="NewUserMsg" xml:space="preserve">
+    <value>Establish a new User</value>
+  </data>
+  <data name="OperationsMsg" xml:space="preserve">
+    <value>Operations</value>
+  </data>
+  <data name="PlayerEditionMsg" xml:space="preserve">
+    <value>Player Edition</value>
+  </data>
+  <data name="PriceMsg" xml:space="preserve">
+    <value>Prices (HKD)</value>
+  </data>
+  <data name="PrintingColorMsg" xml:space="preserve">
+    <value>Original Printing</value>
+  </data>
+  <data name="PrivacyMsg" xml:space="preserve">
+    <value>Privacy</value>
+  </data>
+  <data name="ProdLongMsg" xml:space="preserve">
+    <value>Product (League Team Jersey OR International Team Jersey)</value>
+  </data>
+  <data name="ProductMsg" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="ProductJerseyListMsg" xml:space="preserve">
+    <value>Product Jersey List</value>
+  </data>
+  <data name="QuantitiesMsg" xml:space="preserve">
+    <value>Quantities</value>
+  </data>
+  <data name="RegistrationMsg" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+  <data name="SizeMsg" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="StoreMsg" xml:space="preserve">
+    <value>Store</value>
+  </data>
+  <data name="StoreNameMsg" xml:space="preserve">
+    <value>Store Name</value>
+  </data>
+  <data name="StoresListMsg" xml:space="preserve">
+    <value>Stores List</value>
+  </data>
+  <data name="TelMsg" xml:space="preserve">
+    <value>Telephone Number</value>
+  </data>
+  <data name="UpdateMsg" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="AddNewProductMsg" xml:space="preserve">
+    <value>Add new product</value>
+  </data>
+  <data name="SleeveTypeMsg" xml:space="preserve">
+    <value>Sleeve Type</value>
+  </data>
+  <data name="SeasonMsg" xml:space="preserve">
+    <value>Season</value>
+  </data>
+  <data name="ImageUrlMsg" xml:space="preserve">
+    <value>Image Url</value>
+  </data>
+  <data name="CategoryIdMsg" xml:space="preserve">
+    <value>Category Id</value>
+  </data>
+  <data name="SelectMsg" xml:space="preserve">
+    <value>Please select</value>
+  </data>
+  <data name="ConShoppingMsg" xml:space="preserve">
+    <value>Continue Shopping</value>
+  </data>
+  <data name="SummaryMsg" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="TotalMsg" xml:space="preserve">
+    <value>Total (HKD)</value>
+  </data>
+  <data name="ShoppingCartMsg" xml:space="preserve">
+    <value>Shopping Cart</value>
+  </data>
+  <data name="BackToShoppingCartMsg" xml:space="preserve">
+    <value>Back to Shopping Cart</value>
+  </data>
+  <data name="OrderSummaryMsg" xml:space="preserve">
+    <value>Order Summary</value>
+  </data>
+  <data name="SubscriberInformationMsg" xml:space="preserve">
+    <value>Subscriber Information :</value>
+  </data>
+  <data name="ResidentialAddressMsg" xml:space="preserve">
+    <value>Residential Address</value>
+  </data>
+  <data name="PlaceOrderMsg" xml:space="preserve">
+    <value>Place Order</value>
+  </data>
+  <data name="EstimatedTimeMsg" xml:space="preserve">
+    <value>Estimated Time of Completion :</value>
+  </data>
+  <data name="OrderHeaderNameMsg" xml:space="preserve">
+    <value>Subscriber Name</value>
+  </data>
+  <data name="OrderSubmissionMsg" xml:space="preserve">
+    <value>The order has been submitted</value>
+  </data>
+  <data name="OrderNumberMsg" xml:space="preserve">
+    <value>Your order number is :</value>
+  </data>
+  <data name="OrderPlacedMsg" xml:space="preserve">
+    <value>Your order has been placed successfully! Please click Home icon to continue shopping.</value>
+  </data>
+  <data name="EmailMsg" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="OrderStatusMsg" xml:space="preserve">
+    <value>Order Status</value>
+  </data>
+  <data name="OrderTotalMsg" xml:space="preserve">
+    <value>Order Total</value>
+  </data>
+  <data name="OrderListMsg" xml:space="preserve">
+    <value>Order List</value>
+  </data>
+  <data name="OrderNumberSingleMsg" xml:space="preserve">
+    <value>Order Number</value>
+  </data>
+  <data name="OrderPendingMsg" xml:space="preserve">
+    <value>Order Pending</value>
+  </data>
+  <data name="OrderProcessingMsg" xml:space="preserve">
+    <value>Order Processing</value>
+  </data>
+  <data name="OrderReadyMsg" xml:space="preserve">
+    <value>Order Ready</value>
+  </data>
+  <data name="OrderCompletedMsg" xml:space="preserve">
+    <value>Order Completed</value>
+  </data>
+  <data name="OrderCancelledMsg" xml:space="preserve">
+    <value>Order Cancelled</value>
+  </data>
+  <data name="AllOrdersMsg" xml:space="preserve">
+    <value>All Orders</value>
+  </data>
+  <data name="BackToOrderListMsg" xml:space="preserve">
+    <value>Back to Order List</value>
+  </data>
+  <data name="OrderAcceptedMsg" xml:space="preserve">
+    <value>Accept Order</value>
+  </data>
+  <data name="PaymentConfirmationMsg" xml:space="preserve">
+    <value>(Payment Confirmation)</value>
+  </data>
+  <data name="InformClientMsg" xml:space="preserve">
+    <value>(inform the client to pick up the jersey package)</value>
+  </data>
+  <data name="OrderDateMsg" xml:space="preserve">
+    <value>Order Date</value>
+  </data>
+  <data name="HelloMsg" xml:space="preserve">
+    <value>Hello!</value>
+  </data>
+  <data name="OrderManagementMsg" xml:space="preserve">
+    <value>Order Management</value>
+  </data>
+  <data name="HomePageMsg" xml:space="preserve">
+    <value>Home Page</value>
+  </data>
+  <data name="ForgotPasswordMsg" xml:space="preserve">
+    <value>Forgot your password?</value>
+  </data>
+  <data name="RegisterNewUserMsg" xml:space="preserve">
+    <value>Register as a new User</value>
+  </data>
+  <data name="ResendEmailMsg" xml:space="preserve">
+    <value>Resend email confirmation</value>
+  </data>
+  <data name="UseAccountMsg" xml:space="preserve">
+    <value>Use a valid account to log in.</value>
+  </data>
+  <data name="PasswordMsg" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="RememberMeMsg" xml:space="preserve">
+    <value>Remember Me?</value>
+  </data>
+  <data name="ConfirmPasswordMsg" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="NameMsg" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="SelectRoleMsg" xml:space="preserve">
+    <value>Select Role</value>
+  </data>
+  <data name="SelectStoreMsg" xml:space="preserve">
+    <value>Select Store</value>
+  </data>
+  <data name="CreateNewAccountMsg" xml:space="preserve">
+    <value>Create a new account</value>
+  </data>
+  <data name="RegisterSpecialMsg" xml:space="preserve">
+    <value>Register the account of Manager OR Administrator</value>
+  </data>
+  <data name="AboutUsMsg" xml:space="preserve">
+    <value>About Us</value>
+  </data>
+  <data name="FacebookMsg" xml:space="preserve">
+    <value>Facebook</value>
+  </data>
+  <data name="InstagramMsg" xml:space="preserve">
+    <value>Instagram</value>
+  </data>
+  <data name="LogInMsg" xml:space="preserve">
+    <value>Log In</value>
+  </data>
+</root>

@@ -1,0 +1,201 @@
+﻿@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> Localizer
+@model ShoppingCart
+
+<form method="post">
+    <input hidden asp-for="ProductId" />
+    <div class="container mt-5">
+        <div class="row">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-7 col-lg-7">
+                        <div class="row align-items-center">
+                            <div class="col-6"><h5 class="mb-0">@Model.Product.ProductName</h5></div>
+                            <div class="col-6 text-end"><span class="badge bg-info"><h5 class="mb-0">@Model.Product.Category.CatName</h5></span></div>
+                        </div>
+                        <div class="row">
+                            <h5 class="pt-3">@Localizer["SizeMsg"] : @Model.Product.Size / <span class="text-danger fw-bold">@Localizer["PriceMsg"] : @Model.Product.Price.ToString("0.00")</span></h5>
+                        </div>
+                        <div class="row">
+                            <h5 class="pt-3">@Localizer["DescriptionMsg"] : @Model.Product.Description</h5>
+                        </div>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne">
+                                        @Localizer["SizeMsg"]
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="form-check ps-1 my-3 d-flex justify-content-between">
+                                            <label class="form-check-label" for="extraSmall">
+                                                XS 
+                                            </label>
+                                            <input asp-for="Size" class="form-check-input" type="radio" name="size" id="extraSmall" value="XS" checked>
+                                        </div>
+                                        <hr />
+                                        <div class="form-check ps-1 my-3 d-flex justify-content-between">
+                                            <label class="form-check-label" for="small">
+                                                S 
+                                            </label>
+                                            <input asp-for="Size" class="form-check-input" type="radio" name="size" id="small" value="S">
+                                        </div>
+                                        <hr />
+                                        <div class="form-check ps-1 my-3 d-flex justify-content-between">
+                                            <label class="form-check-label" for="medium">
+                                                M 
+                                            </label>
+                                            <input asp-for="Size" class="form-check-input" type="radio" name="size" id="medium" value="M">
+                                        </div>
+                                        <hr />
+                                        <div class="form-check ps-1 my-3 d-flex justify-content-between">
+                                            <label class="form-check-label" for="large">
+                                                L 
+                                            </label>
+                                            <input asp-for="Size" class="form-check-input" type="radio" name="size" id="large" value="L">
+                                        </div>
+                                        <hr />
+                                        <div class="form-check ps-1 my-3 d-flex justify-content-between">
+                                            <label class="form-check-label" for="extralarge">
+                                                XL 
+                                            </label>
+                                            <input asp-for="Size" class="form-check-input" type="radio" name="size" id="extralarge" value="XL">
+                                        </div>
+                                        <hr />
+                                        <div class="form-check ps-1 my-3 d-flex justify-content-between">
+                                            <label class="form-check-label" for="2extralarge">
+                                                2XL 
+                                            </label>
+                                            <input asp-for="Size" class="form-check-input" type="radio" name="size" id="2extralarge" value="2XL">
+                                        </div>
+                                        <hr />
+                                        <div class="form-check ps-1 my-3 d-flex justify-content-between">
+                                            <label class="form-check-label" for="3extralarge">
+                                                3XL 
+                                            </label>
+                                            <input asp-for="Size" class="form-check-input" type="radio" name="size" id="3extralarge" value="3XL">
+                                        </div>
+                                        <hr />
+                                        <div class="form-check ps-1 my-3 d-flex justify-content-between">
+                                            <label class="form-check-label" for="4extralarge">
+                                                4XL 
+                                            </label>
+                                            <input asp-for="Size" class="form-check-input" type="radio" name="size" id="4extralarge" value="4XL">
+                                        </div>
+                                        <hr />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        @Localizer["EditionMsg"]
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="form-check ps-1 my-3 d-flex justify-content-between">
+                                            <label class="form-check-label" for="fansedition">
+                                                @Localizer["FansEditionMsg"]
+                                            </label>
+                                            <input asp-for="Edition" class="form-check-input" type="radio" name="edition" id="fansedition" value="Fans" checked>
+                                        </div>
+                                        <hr />
+                                        <div class="form-check ps-1 my-3 d-flex justify-content-between">
+                                            <label class="form-check-label" for="playeredition">
+                                                @Localizer["PlayerEditionMsg"]
+                                            </label>
+                                            <input asp-for="Edition" class="form-check-input" type="radio" name="edition" id="playeredition" value="Player">
+                                        </div>
+                                        <hr />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        @Localizer["PrintingColorMsg"]
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="form-check ps-1 my-3 d-flex justify-content-between">
+                                            <label class="form-check-label" for="Home">
+                                                @Localizer["HomeMsg"]
+                                            </label>
+                                            <input asp-for="Printing" class="form-check-input" type="radio" name="printing" id="Home" value="HOME" checked>
+                                        </div>
+                                        <hr />
+                                        <div class="form-check ps-1 my-3 d-flex justify-content-between">
+                                            <label class="form-check-label" for="Away">
+                                                @Localizer["AwayMsg"]
+                                            </label>
+                                            <input asp-for="Printing" class="form-check-input" type="radio" name="printing" id="Away" value="AWAY">
+                                        </div>
+                                        <hr />
+                                        <div class="form-check ps-1 my-3 d-flex justify-content-between">
+                                            <label class="form-check-label" for="2ndAway">
+                                                @Localizer["2ndAwayMsg"]
+                                            </label>
+                                            <input asp-for="Printing" class="form-check-input" type="radio" name="printing" id="2ndAway" value="2ND AWAY">
+                                        </div>
+                                        <hr />
+                                    </div>
+                                </div>
+                            </div>
+                            @* <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Quantities
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <input asp-for="Count" class="form-control mt-2" />
+                                    </div>
+                                </div>
+                            </div> *@
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        @Localizer["QuantitiesMsg"]
+                                    </button>
+                                </h2>
+                            </div>                                 
+                            <div class="input-group" style="max-width: 180px;">
+                                <!-- Decrement button -->
+                                <button type="button" class="btn btn-outline-danger rounded-start"
+                                        onclick="document.getElementById('Count').stepDown()">
+                                    <i class="bi bi-dash-lg"></i>
+                                </button>
+
+                                <!-- Numeric input -->
+                                <input type="number" id="Count" asp-for="Count" class="form-control text-center" value="1" min="1" />
+
+                                <!-- Increment button -->
+                                <button type="button" class="btn btn-outline-success rounded-end"
+                                        onclick="document.getElementById('Count').stepUp()">
+                                    <i class="bi bi-plus-lg"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5 align-self-start">
+                        <img src="@Model.Product.ImageUrl" width="53%" class="rounded" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white mt-5 mb-3">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 pb-1">
+                    <a class="btn btn-light form-control text-primary d-flex justify-content-center align-items-center" style="height:50px;" asp-action="Index">@Localizer["BackToProductMsg"]</a>
+                </div>
+                <div class="col-12 col-md-6 pb-1">
+                    <button type="submit" value="Add to Cart" class="btn btn-primary form-control" style="height:50px;">@Localizer["AddToShoppingCartMsg"]</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

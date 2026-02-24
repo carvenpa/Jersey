@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="2ndAwayMsg" xml:space="preserve">
+    <value>第二作客</value>
+  </data>
+  <data name="AddMsg" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="AddNewCatMsg" xml:space="preserve">
+    <value>新增聯賽或國家隊</value>
+  </data>
+  <data name="AddNewStoreMsg" xml:space="preserve">
+    <value>新增分店</value>
+  </data>
+  <data name="AddressMsg" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="AddToShoppingCartMsg" xml:space="preserve">
+    <value>加進購物籃</value>
+  </data>
+  <data name="AwayMsg" xml:space="preserve">
+    <value>作客</value>
+  </data>
+  <data name="BackToCategoryMsg" xml:space="preserve">
+    <value>回到類別目錄</value>
+  </data>
+  <data name="BackToProductMsg" xml:space="preserve">
+    <value>回到產品目錄</value>
+  </data>
+  <data name="BackToStoresListMsg" xml:space="preserve">
+    <value>回到分店列表</value>
+  </data>
+  <data name="CategoryMsg" xml:space="preserve">
+    <value>類別</value>
+  </data>
+  <data name="CatLongMsg" xml:space="preserve">
+    <value>類別 (聯賽或國家隊)</value>
+  </data>
+  <data name="CMMsg" xml:space="preserve">
+    <value>內容管理</value>
+  </data>
+  <data name="DeleteMsg" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="DescriptionMsg" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="DetailsMsg" xml:space="preserve">
+    <value>詳細內容</value>
+  </data>
+  <data name="DisplayOrderMsg" xml:space="preserve">
+    <value>顯示次序</value>
+  </data>
+  <data name="DistrictMsg" xml:space="preserve">
+    <value>分區</value>
+  </data>
+  <data name="EditionMsg" xml:space="preserve">
+    <value>版本</value>
+  </data>
+  <data name="EditMsg" xml:space="preserve">
+    <value>編輯</value>
+  </data>
+  <data name="FansEditionMsg" xml:space="preserve">
+    <value>球迷版球衣</value>
+  </data>
+  <data name="HomeMsg" xml:space="preserve">
+    <value>主場</value>
+  </data>
+  <data name="LeagueIntMsg" xml:space="preserve">
+    <value>聯賽或國家隊隊名</value>
+  </data>
+  <data name="LoginSystemMsg" xml:space="preserve">
+    <value>登入系統</value>
+  </data>
+  <data name="MFJMsg" xml:space="preserve">
+    <value>球衣店</value>
+  </data>
+  <data name="NewUserMsg" xml:space="preserve">
+    <value>建立新用戶</value>
+  </data>
+  <data name="OperationsMsg" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="PlayerEditionMsg" xml:space="preserve">
+    <value>球員版球衣</value>
+  </data>
+  <data name="PriceMsg" xml:space="preserve">
+    <value>售價 (港幣)</value>
+  </data>
+  <data name="PrintingColorMsg" xml:space="preserve">
+    <value>原裝印字</value>
+  </data>
+  <data name="PrivacyMsg" xml:space="preserve">
+    <value>私隠</value>
+  </data>
+  <data name="ProdLongMsg" xml:space="preserve">
+    <value>聯賽隊伍球衣或國家隊球衣</value>
+  </data>
+  <data name="ProductMsg" xml:space="preserve">
+    <value>產品</value>
+  </data>
+  <data name="ProductJerseyListMsg" xml:space="preserve">
+    <value>球衣清單</value>
+  </data>
+  <data name="QuantitiesMsg" xml:space="preserve">
+    <value>數量</value>
+  </data>
+  <data name="RegistrationMsg" xml:space="preserve">
+    <value>註冊</value>
+  </data>
+  <data name="SizeMsg" xml:space="preserve">
+    <value>尺碼</value>
+  </data>
+  <data name="StoreMsg" xml:space="preserve">
+    <value>分店</value>
+  </data>
+  <data name="StoreNameMsg" xml:space="preserve">
+    <value>分店名稱</value>
+  </data>
+  <data name="StoresListMsg" xml:space="preserve">
+    <value>分店列表</value>
+  </data>
+  <data name="TelMsg" xml:space="preserve">
+    <value>電話號碼</value>
+  </data>
+  <data name="UpdateMsg" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="AddNewProductMsg" xml:space="preserve">
+    <value>新增產品</value>
+  </data>
+  <data name="SleeveTypeMsg" xml:space="preserve">
+    <value>長或短袖</value>
+  </data>
+  <data name="SeasonMsg" xml:space="preserve">
+    <value>球季</value>
+  </data>
+  <data name="ImageUrlMsg" xml:space="preserve">
+    <value>圖片路徑</value>
+  </data>
+  <data name="CategoryIdMsg" xml:space="preserve">
+    <value>類別編號</value>
+  </data>
+  <data name="SelectMsg" xml:space="preserve">
+    <value>請選擇</value>
+  </data>
+  <data name="ConShoppingMsg" xml:space="preserve">
+    <value>繼續購物</value>
+  </data>
+  <data name="SummaryMsg" xml:space="preserve">
+    <value>總結</value>
+  </data>
+  <data name="TotalMsg" xml:space="preserve">
+    <value>小計 (港幣)</value>
+  </data>
+  <data name="ShoppingCartMsg" xml:space="preserve">
+    <value>購物籃</value>
+  </data>
+  <data name="BackToShoppingCartMsg" xml:space="preserve">
+    <value>回到購物籃</value>
+  </data>
+  <data name="OrderSummaryMsg" xml:space="preserve">
+    <value>訂單總結</value>
+  </data>
+  <data name="SubscriberInformationMsg" xml:space="preserve">
+    <value>訂購者資訊 :</value>
+  </data>
+  <data name="ResidentialAddressMsg" xml:space="preserve">
+    <value>住宅地址</value>
+  </data>
+  <data name="PlaceOrderMsg" xml:space="preserve">
+    <value>訂單</value>
+  </data>
+  <data name="EstimatedTimeMsg" xml:space="preserve">
+    <value>預算完成時間 :</value>
+  </data>
+  <data name="OrderHeaderNameMsg" xml:space="preserve">
+    <value>訂單者姓名</value>
+  </data>
+  <data name="OrderSubmissionMsg" xml:space="preserve">
+    <value>訂單已傳送</value>
+  </data>
+  <data name="OrderNumberMsg" xml:space="preserve">
+    <value>您的訂單號碼是:</value>
+  </data>
+  <data name="OrderPlacedMsg" xml:space="preserve">
+    <value>您的訂單已成功下單! 請點選「首頁」圖示繼續購物。</value>
+  </data>
+  <data name="EmailMsg" xml:space="preserve">
+    <value>電郵</value>
+  </data>
+  <data name="OrderStatusMsg" xml:space="preserve">
+    <value>訂單狀況</value>
+  </data>
+  <data name="OrderTotalMsg" xml:space="preserve">
+    <value>訂單總額</value>
+  </data>
+  <data name="OrderListMsg" xml:space="preserve">
+    <value>訂單清單</value>
+  </data>
+  <data name="OrderNumberSingleMsg" xml:space="preserve">
+    <value>訂單號碼</value>
+  </data>
+  <data name="OrderPendingMsg" xml:space="preserve">
+    <value>等待網店確認訂單</value>
+  </data>
+  <data name="OrderProcessingMsg" xml:space="preserve">
+    <value>訂單製作中</value>
+  </data>
+  <data name="OrderReadyMsg" xml:space="preserve">
+    <value>訂單製作完成, 顧客可取貨</value>
+  </data>
+  <data name="OrderCompletedMsg" xml:space="preserve">
+    <value>訂單流程完成</value>
+  </data>
+  <data name="OrderCancelledMsg" xml:space="preserve">
+    <value>取消訂單</value>
+  </data>
+  <data name="AllOrdersMsg" xml:space="preserve">
+    <value>所有訂單</value>
+  </data>
+  <data name="BackToOrderListMsg" xml:space="preserve">
+    <value>回到訂單列表</value>
+  </data>
+  <data name="OrderAcceptedMsg" xml:space="preserve">
+    <value>訂單接受</value>
+  </data>
+  <data name="PaymentConfirmationMsg" xml:space="preserve">
+    <value>(付款確認)</value>
+  </data>
+  <data name="InformClientMsg" xml:space="preserve">
+    <value>(可以通知客人去取球衣)</value>
+  </data>
+  <data name="OrderDateMsg" xml:space="preserve">
+    <value>訂單下單日期</value>
+  </data>
+  <data name="HelloMsg" xml:space="preserve">
+    <value>你好!</value>
+  </data>
+  <data name="OrderManagementMsg" xml:space="preserve">
+    <value>訂單管理</value>
+  </data>
+  <data name="HomePageMsg" xml:space="preserve">
+    <value>主頁</value>
+  </data>
+  <data name="ForgotPasswordMsg" xml:space="preserve">
+    <value>忘記您的密碼?</value>
+  </data>
+  <data name="RegisterNewUserMsg" xml:space="preserve">
+    <value>註冊成為新用戶</value>
+  </data>
+  <data name="ResendEmailMsg" xml:space="preserve">
+    <value>重發確認電郵</value>
+  </data>
+  <data name="UseAccountMsg" xml:space="preserve">
+    <value>請用有效賬戶登入.</value>
+  </data>
+  <data name="PasswordMsg" xml:space="preserve">
+    <value>密碼</value>
+  </data>
+  <data name="RememberMeMsg" xml:space="preserve">
+    <value>記住我嗎?</value>
+  </data>
+  <data name="ConfirmPasswordMsg" xml:space="preserve">
+    <value>確認密碼</value>
+  </data>
+  <data name="NameMsg" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="SelectRoleMsg" xml:space="preserve">
+    <value>選擇角色</value>
+  </data>
+  <data name="SelectStoreMsg" xml:space="preserve">
+    <value>選擇分店</value>
+  </data>
+  <data name="CreateNewAccountMsg" xml:space="preserve">
+    <value>建立一個新帳戶</value>
+  </data>
+  <data name="RegisterSpecialMsg" xml:space="preserve">
+    <value>註冊經理或管理員帳戶</value>
+  </data>
+  <data name="AboutUsMsg" xml:space="preserve">
+    <value>關於我們</value>
+  </data>
+  <data name="FacebookMsg" xml:space="preserve">
+    <value>臉書</value>
+  </data>
+  <data name="InstagramMsg" xml:space="preserve">
+    <value>即時電報</value>
+  </data>
+  <data name="LogInMsg" xml:space="preserve">
+    <value>登入</value>
+  </data>
+</root>

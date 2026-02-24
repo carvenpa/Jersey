@@ -1,0 +1,50 @@
+﻿@model Dictionary<string, List<Jersey.Models.FooterLinkVM>>
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> Localizer
+
+<footer class="border-top bg-dark text-light py-3">
+    <div class="container">
+        <div class="row justify-content-evenly">
+            @foreach (var section in Model)
+            {
+                <div class="col-md-1">                
+                <ul class="list-unstyled">
+                    @foreach (var link in section.Value)
+                    {
+                            
+                            switch (link.LinkText)
+                            {
+                                    case "Log In":
+                                    <li><a href="@link.LinkUrl" class="text-light">@Localizer["LogInMsg"]</a></li>
+                                    break;
+                                    case "Privacy":
+                                    <li><a href="@link.LinkUrl" class="text-light">@Localizer["PrivacyMsg"]</a></li>
+                                    break;
+                                    case "About Us":
+                                    <li><a href="@link.LinkUrl" class="text-light">@Localizer["AboutUsMsg"]</a></li>
+                                    break;
+                                    case "Facebook":
+                                    <li><a href="@link.LinkUrl" class="text-light">@Localizer["FacebookMsg"]</a></li>
+                                    break;
+                                    case "Instagram":
+                                    <li><a href="@link.LinkUrl" class="text-light">@Localizer["InstagramMsg"]</a></li>
+                                    break;
+                                    case "Products":
+                                    <li><a href="@link.LinkUrl" class="text-light">@Localizer["ProductMsg"]</a></li>
+                                    break;
+                            }
+                            
+                        @*     
+                        <li><a href="@link.LinkUrl" class="text-light">@link.LinkText</a></li> *@
+                    }
+                </ul>
+                </div>
+            }
+        </div>
+
+        <hr class="border-light">
+        <div class="text-center small">
+            ©@DateTime.Now.Year - @Localizer["MFJMsg"]
+        </div>
+    </div>
+</footer>

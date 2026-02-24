@@ -1,0 +1,61 @@
+﻿@model List<Store>
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> Localizer
+
+@* @if(TempData["success"] != null)
+{
+    <h2>@TempData["success"]</h2>
+} *@
+@* call partial view to display the result of temp  *@
+@* <partial name="_Notification" /> *@
+
+<div class="container">
+    <div class="row pt-4 pb-3">
+        <div class="col-6">
+            <h2 class="text-primary">
+                @Localizer["StoresListMsg"]
+            </h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Store" asp-action="Create" class="btn btn-info">
+                <i class="bi bi-plus-circle"></i>@Localizer["AddNewStoreMsg"]
+            </a>
+        </div>
+    </div>
+
+    <table id="tblData" class="table table-bordered table-striped" style="width:100%">
+        <thead class="table-primary">
+            <tr>
+                <th class="fw-bold">@Localizer["StoreMsg"]</th>
+                <th class="fw-bold">@Localizer["AddressMsg"]</th>
+                <th class="fw-bold">@Localizer["TelMsg"]</th>
+                <th class="fw-bold">@Localizer["OperationsMsg"]</th>
+            </tr>
+        </thead>  
+        <tbody>
+            @foreach (var obj in Model.OrderBy(x => x.Id))
+            {
+                <tr>
+                    <td>@obj.Name</td>
+                    <td>@obj.Address</td>
+                    <td>@obj.PhoneNumber</td>
+                    <td>
+                        <div class="w-100 btn-group-lg" role="group">
+                            <a asp-controller="Store" asp-action="Edit" asp-route-id="@obj.Id" class="btn btn-primary">
+                                @* need to add the asp-route-id, for this case is Store ID for finding *@
+                                <i class="bi bi-pencil-square"></i>@Localizer["EditMsg"]
+                            </a>
+                            <a asp-controller="Store" asp-action="Delete" asp-route-id="@obj.Id" class="btn btn-danger">
+                                <i class="bi bi-trash-fill"></i>@Localizer["DeleteMsg"]
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@* @section Scripts{
+    <script src="~/js/store.js"></script>
+} *@
